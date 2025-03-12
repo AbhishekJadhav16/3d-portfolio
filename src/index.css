@@ -181,3 +181,26 @@ body:has(.card[data-color="green"]:hover) {
   box-shadow: 0.6vmin 0.6vmin #fff, 1vmin 1vmin #d2e4ff, 1vmin 1vmin #d2e4ff,
     0.65vmin 1vmin #d2e4ff, 1vmin 0.65vmin #d2e4ff;
 }
+
+
+/* Certificate Box Styles */
+.certificate-box {
+  /* Ensures the image is centered inside the box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px; /* Same size for both boxes */
+  height: auto;
+  padding: 3px;
+  border-radius: 10px; /* Slightly rounded corners */
+  border: 2px solid #ddd; /* Outer border */
+  background: black; /* Background for the 3D effect */
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1); /* Outer shadow for 3D effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add a hover effect for 3D look */
+.certificate-box:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
